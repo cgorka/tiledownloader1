@@ -64,7 +64,7 @@ for childX, childY, childZ in childTiles:
     print(f" {i} z {len(childTiles)}")
     requests.post(WEBHOOK_URL, { "content": f" {i} z {len(childTiles)}"})
     # print(f" time left {round((len(childTiles)-i)*0.25/60,2)} min")
-    url = f"https://{param1}.tile.openstreetmap.org/{childZ}/{childX}/{childY}.png"
+    url = f"https://{param1}.tile.openstreetmap.de/{childZ}/{childX}/{childY}.png"
     filename = 'tile_{}_{}_{}.png'.format(childZ, childX, childY)
     blob_client = container_client.get_blob_client(filename)
     if blob_client.exists():
