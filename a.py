@@ -50,7 +50,7 @@ current_dir = os.getcwd()
 print('1')
 childTiles = getAllDescendantTiles(x, y, z, 18)
 headers = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36"
+    "User-Agent": "Mozilla/5.0 "
 }
 connect_str = "DefaultEndpointsProtocol=https;AccountName=deltimaimgstorage;AccountKey=WyYN7UCayN910wjS9Pq+w6+1FvlLFb4wEPzFN0gaC8WeZRCFmP3VPqrEj05BSgjYFreRLIlLA65V+AStowG2BA==;EndpointSuffix=core.windows.net"
 blob_service_client = BlobServiceClient.from_connection_string(connect_str)
