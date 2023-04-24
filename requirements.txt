@@ -1,4 +1,4 @@
 
 azure-core==1.26.4
 azure-storage-blob==12.15.0
-
+discord.py==2.2.2
